@@ -1,0 +1,14 @@
+<library>
+<book Id="_0">
+<name>Harry Potter</name>
+</book><Signature xmlns="http://www.w3.org/2000/09/xmldsig#">
+<SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/>
+<SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/><Reference URI="#_0">
+<Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/>
+</Transforms>
+<DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/>
+<DigestValue>cdiS43aFDQMnb3X8yaIUej3+z9Q=</DigestValue>
+</Reference></SignedInfo>
+<SignatureValue>rtpzGL2gpNaVpZc87cn4HnehSOYcgp7/vSBOhz381fW7NREp9DhGKd7G9KNIM1iYP+GyKFPzkVtG4Cevl88wWDSC4IY6eHPLxVCHgnUYeEZEK7fQNCEAgkP3WKbwnwyOPhXnT8SQL780Dld8HTpo76Y9/8RkPn9kfpfxEm79CK4mcQu4EZ7lVhxuLUsh9ikfSW8X9mrx7VkvgSNC9G9nOBNaCwd90Y9oqpLyMRihn8jF8uFnmU4b0A2x+UdStZUH0VZ0rRqHZWeuzPRvjVr53XcGQZC2tzi5zi10XtNUKFiEflcQG2yfXPFQEAnrMSVMWyViNEo+1Y2O1ppn77Oq+Y6yP1+vxbJIioDBymFs8oUelUufYg87jlsphhrojL0eP6X3l9krdsPAZsAEKFTonhRdwVzbGlzY391aK3VEZUgKRXeRp9rOuBNdWS6EdzG+lZ8Ob/Xqmhr3Mx0xXQmUCwSxRuYdHjjpitPghfqzEssK4aov/uAvc4gk/orw7E0DmfICVCHt6uBQ515cQtOXBBlcON2Xfprl23aL/ek7l9TK8GNBX4dg1mOkOPZ5jU2QUgqd8v/JjvukAUSFqMgerUA1N8rnhzeELyTQla260nGescFLEUshOB1/aG+Q1nMI1niJ8umDf8hpn/pGOPqR1zlt9xTHDQdRhVOUj8owTIY=</SignatureValue>
+</Signature>
+</library>
