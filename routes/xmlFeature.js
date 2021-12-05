@@ -24,20 +24,12 @@ router.get('/xml', function(req, res, next) {
 	              "<name>Harry Potter</name>" +
 	            "</book>" +
 	          "</library>"
-    console.log(1)
-    var sig = new SignedXml()
-    console.log(2)
-    sig.addReference("//*[local-name(.)='book']")    
-    console.log(3)
-    sig.signingKey = fs.readFileSync("private.key")
-    console.log(4)
-    sig.computeSignature(xml)
-    console.log(5)
-    fs.writeFileSync("signed.xml", sig.getSignedXml())
-    console.log(6)
     
-
-
+    var sig = new SignedXml()
+    sig.addReference("//*[local-name(.)='book']")    
+    sig.signingKey = fs.readFileSync("private.key")
+    sig.computeSignature(xml)
+    fs.writeFileSync("signed.xml", sig.getSignedXml())
 });
 
 
@@ -49,6 +41,20 @@ router.get('/xtoj', function(req, res, next) {
     res.send(JSON.parse(result));
  
   });
+});
+
+
+router.get('/jtoxsigned', function(req, res, next) {
+  var obj = {name: "Super", Surname: "Man", age: 23};
+  var builder = new xml2js.Builder();
+  var xml = builder.buildObject(obj);
+  var sig = new SignedXml()
+  sig.addReference("//*[local-name(.)='name']")    
+  sig.signingKey = fs.readFileSync("private.key")
+  sig.computeSignature(xml)
+  console.log(sig.getSignedXml())
+  res.send(sig.getSignedXml())
+  
 });
 
 
